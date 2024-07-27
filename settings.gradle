@@ -1,0 +1,18 @@
+pluginManagement {
+  repositories {
+    mavenCentral()
+    gradlePluginPortal()
+  }
+
+  plugins {
+    id 'org.jetbrains.kotlin.jvm' version kotlinVersion
+    id 'org.gradle.toolchains.foojay-resolver-convention' version fooJayResolverVersion
+  }
+}
+
+plugins {
+  id 'org.gradle.toolchains.foojay-resolver-convention'
+}
+
+rootProject.name = projectName
+include(':application')
