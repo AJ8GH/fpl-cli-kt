@@ -1,0 +1,13 @@
+jar {
+  duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+
+  manifest {
+    attributes 'Main-Class': mainClassName
+  }
+
+  from {
+    configurations.compileClasspath.collect {
+      it.isDirectory() ? it : zipTree(it)
+    }
+  }
+}
