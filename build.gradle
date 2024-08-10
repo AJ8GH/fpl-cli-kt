@@ -33,7 +33,8 @@ subprojects {
   dependencies {
     implementation "com.github.ajalt.clikt:clikt:$cliktVersion"
     implementation "com.github.ajalt.mordant:mordant:$mordantVersion"
-    implementation "com.jakewharton.picnic:picnic:$picnicVersion"
+    implementation "net.java.dev.jna:jna:$jnaVersion"
+    implementation "net.java.dev.jna:jna-platform:$jnaVersion"
 
     testImplementation 'org.jetbrains.kotlin:kotlin-test'
     testImplementation "org.junit.jupiter:junit-jupiter-params:$jUnitVersion"
